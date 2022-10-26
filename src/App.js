@@ -1,10 +1,16 @@
 import React from "react";
+import Container from "./layout/Container";
+import Content from "./layout/Content";
+import Sidebar from "./layout/Sidebar";
+import Widget from "./layout/Widget";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="bg-primary-base">App</h1>
-    </div>
+    <Container >
+      <Sidebar />
+      <Content />
+      <Widget />
+    </Container>
   );
 };
 
